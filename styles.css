@@ -18,6 +18,18 @@ h2 {
   text-transform: capitalize;
 }
 
+h3 {
+  color: #d9d9d9;
+}
+
+p {
+  color: #d9d9d9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 #app-container {
   background-color: rgba(40, 40, 40, 0.5);
   padding: 20px;
@@ -32,20 +44,25 @@ h2 {
 #city-input {
   background: #d9d9d9;
   color: rgba(40, 40, 40, 100%);
-  width: 60%;
+  font-size: medium;
+  width: 70%;
   padding: 16px;
   border: 1px solid #1e1e1e;
   border-radius: 8px;
   box-shadow: 0 0 10px #1e1e1e;
-}
-
-#city-input::placeholder {
-  font-size: medium;
-  color: rgba(40, 40, 40, 75%);
+  transition: border-color 0.3s;
 }
 
 #city-input:hover {
-  border-radius: 2px solid #1e1e1e;
+  border-color: #282828;
+}
+
+#city-input:focus {
+  outline: none;
+}
+
+#city-input::placeholder {
+  color: rgba(40, 40, 40, 75%);
 }
 
 #search-btn {
@@ -60,5 +77,5 @@ h2 {
 }
 
 #weather-info {
-  margin-top: 20px;
+  margin-top: 16px;
 }
