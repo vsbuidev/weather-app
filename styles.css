@@ -2,7 +2,8 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: url(./cloud_bg.jpg), lightgray 50% / cover no-repeat;
+  /* background: url(./cloud_bg.jpg), lightgray 50% / cover no-repeat; */
+  background: linear-gradient(135deg, #1e1e1e 0%, #282828 50%, #1e1e1e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,6 +75,11 @@ p {
   border: 1px solid #1e1e1e;
   border-radius: 8px;
   box-shadow: 0 0 10px #1e1e1e;
+}
+
+#search-btn:hover,
+#search-btn:focus {
+  outline: none;
 }
 
 #weather-info {
