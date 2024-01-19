@@ -3,7 +3,7 @@ function getWeather() {
   const city = document.getElementById("city-input").value;
 
   if (!city) {
-    alert("Please enter a city");
+    alert("Please enter a valid city !");
     return;
   }
 
@@ -53,5 +53,6 @@ function getWeather() {
     .catch((error) => {
       console.error("Error fetching weather data:", error);
       alert("Error fetching weather data. Please try again.");
+      alert("Check your city name is valid.");
     });
 }
